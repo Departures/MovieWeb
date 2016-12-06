@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>调查问卷</title>
+    <link href="waibushi.css" rel="stylesheet" type="text/css"> <!--外部式css样式-->
+    <style type="text/css">
+        .setColor{
+            color:firebrick;
+        }/*类选择器*/
+        .choses>li{
+            border: 1px black solid;
+        }
+
+    </style>
+</head>
+
+<body>
+<h1 align="center"><strong class="setColor">调查问卷</strong></h1>
+<div>
+    <form name="调查表" action="http://localhost:63342/KiiMiiLii的站/KiiMiiLii的站.html" method="post">
+        <ol class="choses">
+            <li><span>您的性别是：</span></li>
+            <input type="radio" name="sex" value="女" id="nv"><label for="nv">女</label>
+            <input type="radio" name="sex" value="男" id="nan"><label for="nan">男</label><br/>
+            <li><span>您的年龄是：</span></li>
+            <input type="radio" name="age" value="10岁以下" id="10">
+            <label for="10">10岁以下</label>
+            <input type="radio" name="age" value="11~18岁" id="11">
+            <label for="11">11~18岁</label>
+            <input type="radio" name="age" value="19~25岁" id="19">
+            <label for="19">19~25岁</label>
+            <input type="radio" name="age" value="26~35岁" id="26">
+            <label for="26">26~35岁</label>
+            <input type="radio" name="age" value="36~45岁" id="36">
+            <label for="36">36~45岁</label>
+            <input type="radio" name="age" value="46~55岁" id="46">
+            <label for="46">46~55岁</label>
+            <input type="radio" name="age" value="56岁以上" id="56">
+            <label for="56">56岁以上</label><br/>
+            <li><span>请在下列选项中勾选出您喜爱的运动项目：</span></li>
+            <input type="checkbox" name="chectbox1" value="足球" id="zuqiu">
+            <label for="zuqiu">足球</label>
+            <input type="checkbox" name="chectbox2" value="篮球" id="lanqiu">
+            <label for="lanqiu">篮球</label>
+            <input type="checkbox" name="chectbox3" value="羽毛球" id="yumaoqiu">
+            <label for="yumaoqiu">羽毛球</label>
+            <input type="checkbox" name="chectbox4" value="游泳" id="youyong">
+            <label for="youyong">游泳</label>
+            <input type="checkbox" name="chectbox5" value="登山" id="dengshan">
+            <label for="dengshan">登山</label>
+            <input type="checkbox" name="chectbox6" value="跑步" id="paobu">
+            <label for="paobu">跑步</label>
+            <input type="checkbox" name="chectbox7" value="其他" id="qita">
+            <label for="qita">其他（请在下面的文本框内加以说明）</label><br/>
+            <textarea cols="150" rows="5">请写出您喜欢的运动项目：</textarea>
+            <li><span>您是否希望我们对您进行回访？</span></li>
+            <select>
+                <option value="是" selected="selected">是</option>
+                <option value="否">否</option>
+            </select><br/>
+            <li><span>请选出目前和您一起居住的人（Windows用户按住Ctrl键/Mac用户按住Command可多选）</span></li>
+            <select multiple="multiple">
+                <option value="爱人">爱人</option>
+                <option value="父亲">父亲</option>
+                <option value="母亲">母亲</option>
+                <option value="爷爷">爷爷</option>
+                <option value="奶奶">奶奶</option>
+                <option value="姥爷">姥爷</option>
+                <option value="姥姥">姥姥</option>
+                <option value="哥哥">哥哥</option>
+                <option value="姐姐">姐姐</option>
+                <option value="弟弟">弟弟</option>
+                <option value="妹妹">妹妹</option>
+                <option value="其他">其他</option>
+
+            </select><br/>
+
+            <br/>
+            <input type="submit" name="submit" value="提交">
+        </ol>
+    </form>
+
+
+</div>
+
+
+</body>
+
+
+</html>
